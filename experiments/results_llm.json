@@ -1,0 +1,472 @@
+{
+  "model_id": "models/SmolLM2-360M-Instruct",
+  "arch": "llama-like",
+  "n_blocks": 32,
+  "params_before": 361821120,
+  "params_after": 361821120,
+  "reduction_pct": 0.0,
+  "compression_ratio": 1.0,
+  "perplexity_before": 10.76,
+  "perplexity_after": 10.76,
+  "eval_tokens": 16384,
+  "calib_tokens": 8192,
+  "exact_candidates": 0,
+  "approx_committed": 0,
+  "approx_rolled_back": 32,
+  "prompt_drifts": {
+    "The meaning of life is": 0.0,
+    "In a shocking finding, scientists discovered": 0.0
+  },
+  "records": [
+    {
+      "path": "layers.0.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 21.0024 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.06306003034114838,
+        "mse_after_calibration": 0.06373181939125061,
+        "out_std_original": 2.0743863582611084,
+        "out_std_calibrated": 2.07438588142395,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 21.00238800048828
+      }
+    },
+    {
+      "path": "layers.1.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 8.6060 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.08060407638549805,
+        "mse_after_calibration": 0.08562448620796204,
+        "out_std_original": 0.6829137802124023,
+        "out_std_calibrated": 0.6829127669334412,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 8.605995178222656
+      }
+    },
+    {
+      "path": "layers.2.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 18.0034 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.12946152687072754,
+        "mse_after_calibration": 0.1383945494890213,
+        "out_std_original": 0.7795732021331787,
+        "out_std_calibrated": 0.7795721292495728,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 18.003402709960938
+      }
+    },
+    {
+      "path": "layers.3.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 1980.3730 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 27.578401565551758,
+        "mse_after_calibration": 27.893917083740234,
+        "out_std_original": 25.28316307067871,
+        "out_std_calibrated": 25.28316307067871,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 1980.373046875
+      }
+    },
+    {
+      "path": "layers.4.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 9.9758 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.25325295329093933,
+        "mse_after_calibration": 0.27568361163139343,
+        "out_std_original": 0.9514045119285583,
+        "out_std_calibrated": 0.9514033794403076,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 9.975818634033203
+      }
+    },
+    {
+      "path": "layers.5.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 9.8563 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.3181685209274292,
+        "mse_after_calibration": 0.35185229778289795,
+        "out_std_original": 0.9884747862815857,
+        "out_std_calibrated": 0.9884735345840454,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 9.856277465820312
+      }
+    },
+    {
+      "path": "layers.6.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 12.0691 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.39250773191452026,
+        "mse_after_calibration": 0.4318682849407196,
+        "out_std_original": 1.1269259452819824,
+        "out_std_calibrated": 1.1269246339797974,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 12.069076538085938
+      }
+    },
+    {
+      "path": "layers.7.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 12.1060 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.49670225381851196,
+        "mse_after_calibration": 0.5448074340820312,
+        "out_std_original": 1.2943392992019653,
+        "out_std_calibrated": 1.2943381071090698,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 12.105987548828125
+      }
+    },
+    {
+      "path": "layers.8.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 9.4907 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.40981563925743103,
+        "mse_after_calibration": 0.4392297565937042,
+        "out_std_original": 1.3485981225967407,
+        "out_std_calibrated": 1.3485971689224243,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 9.490678787231445
+      }
+    },
+    {
+      "path": "layers.9.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 11.6219 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.46351611614227295,
+        "mse_after_calibration": 0.5003283023834229,
+        "out_std_original": 1.3651763200759888,
+        "out_std_calibrated": 1.3651752471923828,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 11.621851921081543
+      }
+    },
+    {
+      "path": "layers.10.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 8.8462 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.4989859163761139,
+        "mse_after_calibration": 0.5416527986526489,
+        "out_std_original": 1.3632755279541016,
+        "out_std_calibrated": 1.3632744550704956,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 8.846219062805176
+      }
+    },
+    {
+      "path": "layers.11.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 13.0879 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.6203672289848328,
+        "mse_after_calibration": 0.6739820837974548,
+        "out_std_original": 1.5370235443115234,
+        "out_std_calibrated": 1.5370224714279175,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 13.087908744812012
+      }
+    },
+    {
+      "path": "layers.12.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 14.6331 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.6148456335067749,
+        "mse_after_calibration": 0.6597105860710144,
+        "out_std_original": 1.6429510116577148,
+        "out_std_calibrated": 1.6429499387741089,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 14.633060455322266
+      }
+    },
+    {
+      "path": "layers.13.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 932.0707 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 3.441511631011963,
+        "mse_after_calibration": 3.956974744796753,
+        "out_std_original": 2.8577463626861572,
+        "out_std_calibrated": 2.857745885848999,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 932.0706787109375
+      }
+    },
+    {
+      "path": "layers.14.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 40.4480 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.7280845642089844,
+        "mse_after_calibration": 0.7980741858482361,
+        "out_std_original": 1.560940146446228,
+        "out_std_calibrated": 1.5609389543533325,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 40.44796371459961
+      }
+    },
+    {
+      "path": "layers.15.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 16.0870 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.6293725371360779,
+        "mse_after_calibration": 0.6869024634361267,
+        "out_std_original": 1.4965425729751587,
+        "out_std_calibrated": 1.4965415000915527,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 16.08696937561035
+      }
+    },
+    {
+      "path": "layers.16.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 18.3397 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.6138694286346436,
+        "mse_after_calibration": 0.6750456690788269,
+        "out_std_original": 1.4630694389343262,
+        "out_std_calibrated": 1.4630683660507202,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 18.33966827392578
+      }
+    },
+    {
+      "path": "layers.17.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 16.7305 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.7299330234527588,
+        "mse_after_calibration": 0.8045169711112976,
+        "out_std_original": 1.5587209463119507,
+        "out_std_calibrated": 1.5587197542190552,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 16.730484008789062
+      }
+    },
+    {
+      "path": "layers.18.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 13.6906 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.7544715404510498,
+        "mse_after_calibration": 0.8326714634895325,
+        "out_std_original": 1.5590375661849976,
+        "out_std_calibrated": 1.5590364933013916,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 13.690629959106445
+      }
+    },
+    {
+      "path": "layers.19.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 15.0338 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 0.87196946144104,
+        "mse_after_calibration": 0.9655920267105103,
+        "out_std_original": 1.672175645828247,
+        "out_std_calibrated": 1.6721745729446411,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 15.033848762512207
+      }
+    },
+    {
+      "path": "layers.20.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 29.3236 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 1.1887176036834717,
+        "mse_after_calibration": 1.3043307065963745,
+        "out_std_original": 2.0019962787628174,
+        "out_std_calibrated": 2.001995086669922,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 29.323644638061523
+      }
+    },
+    {
+      "path": "layers.21.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 22.8433 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 1.747926115989685,
+        "mse_after_calibration": 1.9283638000488281,
+        "out_std_original": 2.3928732872009277,
+        "out_std_calibrated": 2.3928720951080322,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 22.843345642089844
+      }
+    },
+    {
+      "path": "layers.22.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 19.3287 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 2.6055428981781006,
+        "mse_after_calibration": 2.815062999725342,
+        "out_std_original": 3.2197208404541016,
+        "out_std_calibrated": 3.219719648361206,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 19.32868194580078
+      }
+    },
+    {
+      "path": "layers.23.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 23.6269 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 3.927750587463379,
+        "mse_after_calibration": 4.294413089752197,
+        "out_std_original": 3.8736844062805176,
+        "out_std_calibrated": 3.873683452606201,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 23.626924514770508
+      }
+    },
+    {
+      "path": "layers.24.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 26.1755 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 4.791295528411865,
+        "mse_after_calibration": 5.2224297523498535,
+        "out_std_original": 4.386979579925537,
+        "out_std_calibrated": 4.386978626251221,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 26.175514221191406
+      }
+    },
+    {
+      "path": "layers.25.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 34.5395 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 6.320450782775879,
+        "mse_after_calibration": 6.927025318145752,
+        "out_std_original": 4.714627742767334,
+        "out_std_calibrated": 4.714626312255859,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 34.53950500488281
+      }
+    },
+    {
+      "path": "layers.26.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 55.3835 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 9.36009693145752,
+        "mse_after_calibration": 10.25118637084961,
+        "out_std_original": 5.985654830932617,
+        "out_std_calibrated": 5.985653400421143,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 55.383548736572266
+      }
+    },
+    {
+      "path": "layers.27.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 37.1294 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 10.595549583435059,
+        "mse_after_calibration": 11.612631797790527,
+        "out_std_original": 6.2529826164245605,
+        "out_std_calibrated": 6.252981662750244,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 37.129417419433594
+      }
+    },
+    {
+      "path": "layers.28.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 40.1402 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 12.394913673400879,
+        "mse_after_calibration": 13.45604419708252,
+        "out_std_original": 6.892913341522217,
+        "out_std_calibrated": 6.8929123878479,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 40.140193939208984
+      }
+    },
+    {
+      "path": "layers.29.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 61.7471 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 14.064092636108398,
+        "mse_after_calibration": 15.22671127319336,
+        "out_std_original": 8.41421127319336,
+        "out_std_calibrated": 8.414210319519043,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 61.7470703125
+      }
+    },
+    {
+      "path": "layers.30.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 199.6909 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 15.010126113891602,
+        "mse_after_calibration": 15.951760292053223,
+        "out_std_original": 10.976387023925781,
+        "out_std_calibrated": 10.976385116577148,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 199.69091796875
+      }
+    },
+    {
+      "path": "layers.31.mlp",
+      "kind": "approx",
+      "committed": false,
+      "reason": "rolled back: block drift 1405.9268 > tol 2.0",
+      "diagnostics": {
+        "mse_before_calibration": 19.06760597229004,
+        "mse_after_calibration": 19.44931983947754,
+        "out_std_original": 34.05137634277344,
+        "out_std_calibrated": 34.05137634277344,
+        "calibration_rows": 8192,
+        "block_output_max_drift": 1405.9267578125
+      }
+    }
+  ],
+  "elapsed_s": 671.9,
+  "notes": "perplexity: non-overlapping 1024-token chunks, WikiText-2 validation text (pytorch/examples mirror); calibration captured in one pristine pass; approx commit threshold: per-block max abs output drift <= 2.0"
+}
